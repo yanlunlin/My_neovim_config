@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>r", function()
   local ext = filename:match("^.+(%..+)$")
   if ext == ".c" then
     vim.cmd([[
-      TermExec cmd="clang % "
+      TermExec cmd="clang %"
       TermExec cmd="./a.out"
     ]])
   elseif ext == ".cpp" then
