@@ -12,3 +12,9 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+
+-- after/syntax/c.lua
+vim.cmd([[
+  syntax match cFormat "%\(\d\+\$\)\=[-+' #0]*\(\d\+\|\*\)\=\(\.\(\d\+\|\*\)\)\=\([hlL]\|ll\|hh\)\=[cCdiouxXeEfgGaAnps%]"
+  highlight link cFormat Special
+]])
