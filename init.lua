@@ -18,3 +18,5 @@ vim.cmd([[
   syntax match cFormat "%\(\d\+\$\)\=[-+' #0]*\(\d\+\|\*\)\=\(\.\(\d\+\|\*\)\)\=\([hlL]\|ll\|hh\)\=[cCdiouxXeEfgGaAnps%]"
   highlight link cFormat Special
 ]])
+
+vim.g.tex_flavor = "latex"
