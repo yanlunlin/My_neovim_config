@@ -12,7 +12,7 @@
 
 # More you need to do 
 
-1. Put a file `.stylua`.toml in your `$Home`
+1. Put a file `.stylua.toml` in your `$Home`
 
 ``` ~/.stylua.toml
 indent_type = "Spaces"
