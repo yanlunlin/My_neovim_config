@@ -1,3 +1,6 @@
+<!-- Language Selection -->
+**Languages**: [🇺🇸 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md)
+
 # 🚀 Modern Neovim Configuration
 
 A highly optimized and feature-rich Neovim configuration with LSP support, modern completion, and beautiful UI components.
