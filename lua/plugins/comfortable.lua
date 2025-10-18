@@ -28,4 +28,19 @@ return {
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup({
+        filetypes = { "*" },
+        user_default_options = {
+          css = true,
+          rgb_fn = true,
+          hsl_fn = true,
+          mode = "background",
+          virtualtext = "■",
+        },
+      })
+    end,
+  },
 }
