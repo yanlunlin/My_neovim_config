@@ -6,13 +6,11 @@ vim.keymap.set("n", "L", "$", { desc = "跳轉到行尾" })
 
 vim.keymap.set("n", "<leader>p", "<CMD>NvimTreeToggle<CR>", { desc = "切換檔案樹" })
 
-vim.keymap.set("n", "<leader>bd", "<CMD>BufferClose<CR>", { desc = "關閉當前緩衝區" })
-vim.keymap.set("n", "<leader>bn", "<CMD>BufferNext<CR>", { desc = "下一個緩衝區" })
+vim.keymap.set("n", "<leader>bc", "<CMD>BufferClose<CR>", { desc = "關閉當前緩衝區" })
+vim.keymap.set("n", "<c-l>", "<CMD>BufferNext<CR>", { desc = "下一個緩衝區" })
+vim.keymap.set("n", "<c-h>", "<CMD>BufferPrevious<CR>", { desc = "上一個緩衝區" })
 
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "左視窗" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "下視窗" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "上視窗" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "右視窗" })
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "清除 search highlight" })
 
 vim.keymap.set("n", "<leader>g", function()
   require("snacks").lazygit()
