@@ -136,8 +136,7 @@ The configuration automatically installs and configures LSP servers for:
 │       ├── ui.lua         # UI enhancements
 │       ├── treesitter.lua # Syntax highlighting
 │       ├── terminal.lua   # Terminal integration
-│       ├── latex.lua      # LaTeX support
-│       ├── markdown.lua   # Markdown support
+│       ├── build.lua      # Build tools (CMake, LaTeX, Markdown)
 │       └── ...            # Other plugin configs
 └── doc/
     └── img/

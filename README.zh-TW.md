@@ -136,8 +136,7 @@ collapse_simple_statement = "Never"
 │       ├── ui.lua         # UI 增強
 │       ├── treesitter.lua # 語法高亮
 │       ├── terminal.lua   # 終端機整合
-│       ├── latex.lua      # LaTeX 支援
-│       ├── markdown.lua   # Markdown 支援
+│       ├── build.lua      # 建構工具 (CMake, LaTeX, Markdown)
 │       └── ...            # 其他插件配置
 └── doc/
     └── img/
