@@ -6,6 +6,21 @@ return {
         "lua-language-server",
         "clangd",
         "stylua",
+        "bash-language-server",
+        "clangd",
+        "cmake-language-server",
+        "css-lsp",
+        "docker-language-server",
+        "doctoc",
+        "html-lsp",
+        "json-lsp",
+        "lua-language-server",
+        "prettierd",
+        "pyright",
+        "rust-analyzer",
+        "stylua",
+        "texlab",
+        "typescript-language-server",
       },
     },
     config = function(_, opts)
@@ -43,9 +58,6 @@ return {
         },
       })
       local capabilities = require("blink.cmp").get_lsp_capabilities()
-      local lspconfig = require("lspconfig")
-
-      lspconfig["lua_ls"].setup({ capabilities = capabilities })
     end,
   },
   {
