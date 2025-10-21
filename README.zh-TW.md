@@ -130,18 +130,19 @@ collapse_simple_statement = "Never"
 │   │   ├── lazy.lua        # Lazy.nvim 設定
 │   │   └── keymap.lua      # 按鍵映射
 │   └── plugins/
-│       ├── lsp.lua         # LSP 配置
-│       ├── completion.lua  # 補全設定
+│       ├── blink.lua       # Blink.cmp 補全引擎
+│       ├── build.lua       # 建置工具 (CMake、LaTeX、Markdown)
 │       ├── colorscheme.lua # 主題配置
-│       ├── ui.lua         # UI 增強
-│       ├── treesitter.lua # 語法高亮
-│       ├── terminal.lua   # 終端機整合
-│       ├── latex.lua      # LaTeX 支援
-│       ├── markdown.lua   # Markdown 支援
-│       └── ...            # 其他插件配置
+│       ├── completion.lua  # 補全設定
+│       ├── lsp.lua         # LSP 配置
+│       ├── search.lua      # Flash.nvim 搜尋與導航
+│       ├── snack.lua       # Snacks.nvim 工具集
+│       ├── terminal.lua    # 終端機整合
+│       ├── treesitter.lua  # 語法高亮
+│       └── ui.lua          # UI 增強
 └── doc/
     └── img/
-        └── main.png       # 截圖
+        └── main.png        # 截圖
 ```
 
 ## 🔧 自訂設定

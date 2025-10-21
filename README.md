@@ -130,18 +130,19 @@ The configuration automatically installs and configures LSP servers for:
 │   │   ├── lazy.lua        # Lazy.nvim setup
 │   │   └── keymap.lua      # Key mappings
 │   └── plugins/
-│       ├── lsp.lua         # LSP configuration
-│       ├── completion.lua  # Completion setup
+│       ├── blink.lua       # Blink.cmp completion engine
+│       ├── build.lua       # Build tools (CMake, LaTeX, Markdown)
 │       ├── colorscheme.lua # Theme configuration
-│       ├── ui.lua         # UI enhancements
-│       ├── treesitter.lua # Syntax highlighting
-│       ├── terminal.lua   # Terminal integration
-│       ├── latex.lua      # LaTeX support
-│       ├── markdown.lua   # Markdown support
-│       └── ...            # Other plugin configs
+│       ├── completion.lua  # Completion setup
+│       ├── lsp.lua         # LSP configuration
+│       ├── search.lua      # Flash.nvim search and navigation
+│       ├── snack.lua       # Snacks.nvim utilities
+│       ├── terminal.lua    # Terminal integration
+│       ├── treesitter.lua  # Syntax highlighting
+│       └── ui.lua          # UI enhancements
 └── doc/
     └── img/
-        └── main.png       # Screenshot
+        └── main.png        # Screenshot
 ```
 
 ## 🔧 Customization
