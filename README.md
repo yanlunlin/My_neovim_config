@@ -12,8 +12,8 @@ A highly optimized and feature-rich Neovim configuration with LSP support, moder
 - **🔧 LSP Integration**: Full Language Server Protocol support with auto-completion, diagnostics, and code actions
 - **🎨 Beautiful UI**: Catppuccin colorscheme with transparent background and modern status line
 - **⚡ Smart Completion**: Fast and intelligent code completion with Blink.cmp
-- **📁 File Management**: Integrated file explorer with NvimTree
-- **🔍 Fuzzy Finding**: Quick file and text search capabilities
+- **📁 File Management**: Integrated file manager with Yazi.nvim
+- **🔍 Fuzzy Finding**: Quick file and text search capabilities with Flash.nvim
 - **🌳 Syntax Highlighting**: Advanced treesitter-based syntax highlighting
 - **🔀 Git Integration**: Built-in Git support with Gitsigns and Lazygit
 - **🖥️ Terminal Integration**: Seamless terminal experience with ToggleTerm
@@ -91,10 +91,12 @@ The configuration automatically installs and configures LSP servers for:
 - `H` - Move to beginning of line
 - `L` - Move to end of line
 
+**Tip**: Press `<leader>?` to see a list of available keybindings.
+
 ### File Management
-- `<leader>p` - Toggle file explorer
-- `<leader>ff` - Find files
-- `<leader>fg` - Live grep
+- `<leader>p` - Open yazi at the current file
+- `<leader>cw` - Open the file manager in nvim's working directory
+- `<c-up>` - Resume the last yazi session
 
 ### Buffer Management
 - `<leader>bd` - Close current buffer
@@ -128,16 +130,19 @@ The configuration automatically installs and configures LSP servers for:
 ├── lua/
 │   ├── config/
 │   │   ├── lazy.lua        # Lazy.nvim setup
-│   │   └── keymap.lua      # Key mappings
+│   │   ├── keymap.lua      # Key mappings
+│   │   └── autocmd.lua     # Autocommands
 │   └── plugins/
-│       ├── lsp.lua         # LSP configuration
-│       ├── completion.lua  # Completion setup
-│       ├── colorscheme.lua # Theme configuration
-│       ├── ui.lua         # UI enhancements
-│       ├── treesitter.lua # Syntax highlighting
-│       ├── terminal.lua   # Terminal integration
-│       ├── latex.lua      # LaTeX support
-│       ├── markdown.lua   # Markdown support
+│       ├── blink.lua      # Completion engine (Blink.cmp)
+│       ├── build.lua      # Build tools (CMake, VimTeX, Render Markdown)
+│       ├── colorscheme.lua # Theme configuration (Catppuccin)
+│       ├── completion.lua  # Completion related (nvim-autopairs, nvim-ts-autotag, mini.surround)
+│       ├── lsp.lua         # LSP configuration (Mason, nvim-lspconfig, conform.nvim)
+│       ├── search.lua     # Search and navigation (Flash.nvim)
+│       ├── snack.lua      # Various utility functions (Snacks.nvim)
+│       ├── terminal.lua   # Terminal integration (ToggleTerm)
+│       ├── treesitter.lua # Syntax highlighting (nvim-treesitter)
+│       ├── ui.lua         # UI enhancements (Lualine, Barbar, Rainbow Delimiters, Noice, Yazi, Which-key, Colorizer)
 │       └── ...            # Other plugin configs
 └── doc/
     └── img/

@@ -1,5 +1,6 @@
 require("config.lazy")
 require("config.keymap")
+require("config.autocmd")
 
 vim.wo.cursorline = true
 vim.opt.list = true
